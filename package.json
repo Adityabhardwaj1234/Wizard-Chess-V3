@@ -1,0 +1,24 @@
+{
+  "name": "wizards-chess-production-edition",
+  "version": "3.0.0",
+  "description": "Wizard's Chess: Production Edition — Lightweight 2D Chess Platform, 12-Tier Calibrated Cathedral Engine, 11-Layer X-Ray Tactical Intelligence & Headless Self-Play Training Lab",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test src/tests/suite.test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.4.5"
+  }
+}
