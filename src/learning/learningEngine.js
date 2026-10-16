@@ -202,6 +202,22 @@ export function runTacticalRegressionSuite(candidateParams) {
 /**
  * Simulate a single headless self-play game between Candidate and Opponent
  * with zero DOM overhead and bounded memory.
+ *
+ * Without JSDoc annotations, the `opponentPresetId = null` default narrows the
+ * inferred type to `null` only, which rejects the legitimate `string` value the
+ * Training Lab passes in. These annotations widen it to the real contract.
+ *
+ * @param {Object} config
+ * @param {number} [config.gameIndex]
+ * @param {number} [config.openingIndex]
+ * @param {'w'|'b'} [config.candidateColor]
+ * @param {Object} config.candidateParams
+ * @param {Object} config.championParams
+ * @param {string|null} [config.opponentPresetId]
+ * @param {number} [config.maxDepth]
+ * @param {number} [config.timeLimitMs]
+ * @param {number} [config.maxPlies]
+ * @param {number} [config.seed]
  */
 export function simulateSingleHeadlessGame({
   gameIndex = 0,

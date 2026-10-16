@@ -13,8 +13,8 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 
-import { useSession, type BoardTheme, type PlayerColor, type PrimaryView } from '../context/CathedralSession';
-import { CLOCK_PRESETS } from '../lib/cathedral';
+import { useSession, type BoardTheme, type PrimaryView } from '../context/CathedralSession';
+import { CLOCK_PRESETS, type PlayerColor } from '../lib/cathedral';
 import { BOARD_THEME_OPTIONS, DIFFICULTY_OPTIONS } from '../lib/options';
 import { loadLearningState } from '../learning/learningEngine';
 
